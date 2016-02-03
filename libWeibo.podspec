@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
 
   s.source              = { :git=> "https://github.com/viczy/libWeibo.git", :tag => s.version.to_s }
-  s.source_files        = 'libWeibo/*.{h,m}' 
-  s.public_header_files = 'libWeibo/*.h'
-  s.resource            = 'libWeibo/WeiboSDK.bundle'
-  s.vendored_libraries  = 'libWeibo/libWeiboSDK.a'
+  s.source_files        = 'libWeiboSDK/*.{h,m}' 
+  s.public_header_files = 'libWeiboSDK/*.h'
+  s.resource            = 'libWeiboSDK/WeiboSDK.bundle'
+  s.vendored_libraries  = 'libWeiboSDK/libWeiboSDK.a'
   s.frameworks          = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
   s.libraries           = 'sqlite3', 'z'
 end
